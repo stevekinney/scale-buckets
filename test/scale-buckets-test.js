@@ -46,8 +46,8 @@ describe('scaleBuckets', function () {
   });
 
   it('should throw an error if the input is out of range', function () {
-    assert.throws(function () { this.scale(0)}.bind(this), /range/);
-    assert.throws(function () { this.scale(11)}.bind(this), /range/);
+    assert.throws(function () { this.scale(0) }.bind(this), /range/);
+    assert.throws(function () { this.scale(11) }.bind(this), /range/);
   });
 
 });
