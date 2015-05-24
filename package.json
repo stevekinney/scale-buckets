@@ -1,0 +1,26 @@
+{
+  "name": "scale-buckets",
+  "version": "1.0.0",
+  "description": "Sort a range of values into little histogram-like bins",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevekinney/scale-buckets"
+  },
+  "keywords": [
+    "data",
+    "histogram"
+  ],
+  "author": "Steve Kinney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevekinney/scale-buckets/issues"
+  },
+  "homepage": "https://github.com/stevekinney/scale-buckets",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
