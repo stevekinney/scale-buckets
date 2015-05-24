@@ -1,14 +1,15 @@
-module.exports = function (values, minimum, maximum) {
+module.exports = function(values, minimum, maximum) {
 
-  const range = minimum - maximum - 1;
-  const segmentSize = values.length / range;
+  var range = minimum - maximum - 1;
+  var segmentSize = values.length / range;
 
-  return function (value) {
+  return function(value) {
     if (value < minimum || value > maximum) {
-      throw new Error('Value, ' + value + ', is out of range: ' + minimum + ' to ' + maximum + '.');
+      throw new Error('Value, ' + value + ', is out of range: ' +
+                      minimum + ' to ' + maximum + '.');
     }
 
-    const index = Math.floor((value - minimum) * -segmentSize + minimum) - 1;
+    var index = Math.floor((value - minimum) * -segmentSize + minimum) - 1;
     return values[index];
   };
 

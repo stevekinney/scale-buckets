@@ -1,4 +1,4 @@
-# Scale Bucket
+# Scale Buckets
 
 A little utility for sorting a range of values into little histogram-like bins.
 
